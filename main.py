@@ -1,13 +1,14 @@
 import requests
 from loguru import logger
-from Encrypt.Encrypt import jSONStringify
+from Encrypt.Encrypt import Encrypt
 
 class Crawler:
     def __init__(self) -> None:
-        pass
-    
+        self.encrypt = Encrypt()
+     
     def run(self):
         logger.debug("请求流程构建...")
+        
 
 
 
